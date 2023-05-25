@@ -1,6 +1,5 @@
 #include "monty.h"
 
-}
 /**
  * stack - adds data to top of stack
  * @stack: doubly linked list
