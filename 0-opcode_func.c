@@ -11,7 +11,7 @@ void push(stack_t **stack, unsigned int line_number)
 stack_t *new = NULL;
 int num;
 char *s = strtok(NULL, "\n");
-if (atoi(s) == 0)
+if (args_check(s) == 0)
 {
 fprintf(stderr, "L%u: usage push integer \n", line_number);
 clean(glob.stk);
