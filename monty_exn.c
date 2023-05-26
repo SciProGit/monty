@@ -35,7 +35,7 @@ void instruc(char *s, unsigned int line_num)
 	{
 		if (!strcmp(op, ins[i].opcode))
 		{
-			ins[i].f(&(op), line_num);
+			ins[i].f(&(s), line_num);
 			return;
 		}
 	i++;
