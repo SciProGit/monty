@@ -28,7 +28,7 @@ void instruc(char *s, unsigned int line_num)
 				{"queue", queue},
 				{"stack", stack},
 				{NULL, NULL}};
-	op = strtok(s, "$ \n\t\r\v\f");
+	op = strtok(s, " \n\t\r\v\f");
 	if (!op || op[0] == '#')
 	return;
 	while (ins[i].opcode && op)
